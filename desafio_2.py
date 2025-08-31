@@ -1,7 +1,3 @@
-# ================================
-# Funções de operações bancárias
-# ================================
-
 def depositar(valor, conta, /):
     """Depósito - argumentos somente posicionais"""
     if valor > 0:
@@ -37,10 +33,6 @@ def exibir_extrato(conta, /, *, extrato=None):
     print(f"\nSaldo: R$ {conta['saldo']:.2f}")
     print("==========================================")
 
-
-# ================================
-# Funções de cadastro
-# ================================
 
 def cadastrar_usuario(usuarios):
     cpf = input("Informe o CPF (somente números): ").strip()
@@ -101,10 +93,6 @@ def selecionar_conta(contas):
         print("Conta não encontrada ou CPF não confere.")
     return conta
 
-
-# ================================
-# Programa principal
-# ================================
 
 menu = """
 [d] Depositar
